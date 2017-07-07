@@ -1,0 +1,45 @@
+[MESSAGES CONTROL]
+
+disable=abstract-class-little-used,
+    broad-except,
+    duplicate-code,
+    fixme,
+    global-statement,
+    invalid-name,
+    missing-docstring,
+    no-member,
+    no-self-use,
+    protected-access,
+    star-args,
+    too-few-public-methods,
+    too-many-arguments,
+    too-many-branches,
+    too-many-locals,
+    too-many-public-methods,
+    too-many-instance-attributes,
+    too-many-statements,
+    wildcard-import
+
+[REPORTS]
+
+output-format=text
+files-output=no
+reports=no
+
+
+[BASIC]
+
+# List of builtins function names that should not be used, separated by a comma
+bad-functions=map,apply,input,file
+
+# Good variable names which should always be accepted, separated by a comma
+good-names=e,i,j,k,ex,Run,_
+
+# Bad variable names which should always be refused, separated by a comma
+bad-names=foo,bar,baz,toto,tutu,tata
+
+# Regular expression matching correct class attribute names
+class-attribute-rgx=([A-Za-z_][A-Za-z0-9_]{2,40}|(__.*__))$
+
+# Regular expression matching correct method names
+method-rgx=(test_.*|[a-z_][a-z0-9_]{2,40})$
